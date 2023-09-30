@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\controllers\Itemcontroller;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('Product','Itemcontroller');
+Route::resource('product', Itemcontroller::class);
